@@ -1,0 +1,1145 @@
+/*//////////////   GENERAL    //////////////*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea
+{
+    padding: 5px;
+
+    border: 1px solid black;
+}
+
+section
+{
+    margin-top: 50px;
+}
+
+.bowlby
+{
+    font-family: 'Bowlby One SC', 'Arial', cursive;
+}
+
+.megrim
+{
+    font-family: 'Megrim', 'Arial', cursive;
+}
+
+h2
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.btn-bowlby
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 12px;
+
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 2px solid black;
+    background: black;
+}
+
+.btn-bowlby:hover
+{
+    color: black;
+    background: white;
+}
+
+.btn-megrim
+{
+    font-family: 'Megrim', cursive;
+    font-weight: 900;
+
+    padding: 5px;
+
+    color: white;
+    border: white 2px solid;
+}
+
+.btn-megrim:hover
+{
+    color: black;
+    background: white;
+}
+
+#main
+{
+    font-family: 'Old Standard TT', 'Arial', sans-serif;
+
+    background: rgb(242, 242, 242);
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: 80px;
+    padding: 0 30px;
+
+    background-color: rgb(0, 0, 0);
+}
+
+header h1 a
+{
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+#content
+{
+    min-height: 90vh;
+}
+
+
+/*////////////  NAV  ///////////////*/
+h1 a,
+#nav-container,
+.nav-post-title a,
+#titleBook
+{
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+h1 a,
+#nav-container
+{
+    font-family: 'Megrim', cursive;
+    font-weight: 900;
+
+    padding: 5px;
+
+    color: white;
+    border: white 2px solid;
+}
+
+h1 a:hover,
+#nav-container:hover
+{
+    color: black;
+    background: white;
+}
+
+#nav-container
+{
+    cursor: pointer;
+}
+
+#titleBook
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 22px;
+}
+
+#nav-public
+{
+    position: absolute;
+    z-index: 6;
+    top: 80px;
+
+    display: none;
+
+    border-top: 2px dashed black;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+    background: white;
+}
+
+.nav-post-title
+{
+    list-style: none;
+
+    border-bottom: 2px dashed black;
+}
+
+.nav-post-title a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 5px 10px;
+
+    color: black;
+}
+
+.nav-post-title :hover
+{
+    color: white;
+    border-color: white;
+    background: black;
+}
+
+
+/*//////////  SLIDERBOOK  /////////////*/
+#postAndComments-index
+{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* book dimension */
+#book,
+#book-box,
+#post-index-container
+{
+    width: 750px;
+    height: 600px;
+}
+
+/*bacground effect*/
+#book
+{
+    position: absolute;
+
+    opacity: .2;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0)40%, rgba(0, 0, 0, 1)50%, rgba(0, 0, 0, 0)60%);
+}
+
+#book-box
+{
+    position: absolute;
+
+    opacity: .3;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+}
+
+#post-index-container
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    padding: 30px 0 30px 0;
+}
+
+.postTitle
+{
+    font-family: 'Old Standard TT', 'Arial', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 30px 0 30px;
+
+    text-decoration: underline;
+}
+
+#postContent
+{
+    font-size: 15px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 510px;
+    padding-top: 25px;
+}
+
+#postContent p
+{
+    position: relative;
+
+    width: 375px;
+    padding: 0 30px;
+}
+
+#endChap
+{
+    text-align: center;
+}
+
+
+#post-index-btn
+{
+    padding-top: 620px;
+
+    text-align: center;
+}
+
+.btn-book
+{
+    font-size: 35px;
+
+    cursor: pointer;
+
+    border: 0;
+    background: rgba(255, 255, 255, 0);
+}
+
+
+/*////////////// COMMENTS  //////////////*/
+.comments
+{
+    width: 750px;
+    margin: 20px 30px;
+}
+
+#form-comment
+{
+    display: none;
+
+    padding: 20px 0;
+
+    border: 2px dashed black;
+}
+
+#comments-container
+{
+    display: none;
+}
+
+#form-comment-flex
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#form-comment-flex label
+{
+    padding: 10px 20px;
+
+    text-align: left;
+}
+
+#form-comment-textarea
+{
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.comments button:hover
+{
+    color: black;
+    background: white;
+}
+
+.comments button
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 12px;
+
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 2px solid black;
+    background: black;
+}
+
+#comments-btn
+{
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 30px;
+}
+
+
+#comments-container-flex
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-top: 20px;
+    padding: 20px 20px;
+
+    border: 2px dashed black;
+}
+
+#comments-container-flex h3
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.comments-backWhite
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: 100%;
+    margin: 10px 10px 10px 0;
+
+    background: white;
+}
+
+.comment-date
+{
+    font-size: 12px;
+    font-style: italic;
+
+    width: 50%;
+    padding: 5px 20px;
+
+    text-align: right;
+}
+
+.comment-author
+{
+    font-size: 13px;
+    font-weight: 900;
+    font-style: italic;
+
+    width: 50%;
+    padding: 5px 20px;
+
+    text-align: left;
+}
+
+.comment-content
+{
+    width: 100%;
+    padding: 5px 20px;
+
+    text-align: left;
+}
+
+#comments-container-flex .comment-btn-reported,
+#comments-container-flex .btn-reported-submit
+{
+    font-size: 10px;
+
+    margin: 5px 20px;
+    padding: 2px;
+
+    text-align: right;
+}
+
+.reported-form
+{
+    display: none;
+}
+
+.reported-form label
+{
+    font-size: 12px;
+}
+
+.reported-form input
+{
+    margin-left: 20px;
+}
+
+#btn-form-submit
+{
+    margin: 0 20px;
+}
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    background: black;
+}
+
+footer a
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 14px;
+
+    padding: 5px;
+
+    text-decoration: none;
+
+    color: white;
+    border: 2px solid black;
+}
+
+footer a:hover
+{
+    border: 2px solid white;
+}
+
+
+/*/////// VIEW ADMIN/CONNECTION  ////////*/
+#connection-flex
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hello-connection
+{
+    margin: 50px 30px 30px 30px;
+}
+
+#form-connection
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 30px 0 30px;
+}
+
+#form-connection label
+{
+    margin-bottom: 10px;
+}
+
+#form-connection input
+{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#form-connection button
+{
+    width: 80px;
+    margin-left: 60px;
+}
+
+
+/*/////// VIEW ADMIN/INDEX ///////////*/
+#nav-admin
+{
+    padding: 20px 0;
+
+    background: black;
+}
+
+#nav-admin ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-admin li
+{
+    font-size: 20px;
+
+    list-style: none;
+}
+
+#nav-admin a
+{
+    text-decoration: none;
+}
+
+#admin-comments-reported
+{
+    margin: 50px 40px;
+}
+
+#admin-comments-reported ul
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+}
+
+#admin-comments-reported li
+{
+    list-style: none;
+}
+
+.nb-reported,
+.numChap,
+.email-reported
+{
+    width: 33%;
+    margin: 10px 0;
+
+    text-align: center;
+}
+
+.nb-reported,
+.email-reported
+{
+    font-size: 13px;
+}
+
+.numChap
+{
+    font-size: 20px;
+}
+
+#admin-comments-reported a
+{
+    font-size: 10px;
+
+    margin: 5px 20px;
+
+    text-decoration: none;
+}
+
+#posts-listing
+{
+    margin: 50px 40px;
+}
+
+#posts-listing ul
+{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-left: 15px;
+
+    list-style: none;
+
+    border: 2px dashed black;
+    background: white;
+}
+
+#posts-listing li
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 10px 10px 10px 0;
+    padding: 10px 0;
+}
+
+#posts-listing li:hover
+{
+    background: rgb(242, 242, 242);
+}
+
+#posts-listing a
+{
+    margin: 0 5px;
+
+    text-decoration: none;
+}
+
+.post-listing-title
+{
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+
+    color: black;
+}
+
+#deconnexion-btn
+{
+    padding: 5px 10px;
+}
+
+
+/*/////// VIEW CREATE/UPDATE ///////*/
+#create,
+#update
+{
+    margin: 40px;
+}
+
+#create label,
+#btn-create,
+#update label,
+#btn-update
+{
+    margin: 20px 10px;
+}
+
+#mceu_11
+{
+    padding: 2px;
+
+    border: 1px solid black;
+}
+
+#post-title
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#post-content
+{
+    height: 50vh;
+}
+
+
+/*////////   VIEW ADMIN/READ   ///////*/
+.admin-nb-reported
+{
+    width: 50%;
+    padding-left: 20px;
+
+    text-align: left;
+}
+
+.admin-email-reported
+{
+    padding-right: 20px;
+}
+
+.admin-btn-delete-comment
+{
+    margin: 5px;
+
+    text-decoration: none;
+}
+
+
+/*////////   NOTIFICATION AFTER AN ACTION   //////////*/
+.notification
+{
+    font-family: 'Bowlby One SC', 'Arial', cursive;
+    font-size: 14px;
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    display: inline-block;
+
+    padding: 15px;
+
+    border: 2px dashed black;
+    background: white;
+}
+
+/*///////////////    LEGAL NOTICE  ///////////////*/
+#legalNotice {
+    margin: 50px;
+}
+
+/*////////////   RESPONSIVE    /////////////*/
+@media all and (max-device-width: 1024px)
+{
+    /*<<<<<<<<<<<<  Home    <<<<<<<<<<<<<*/
+    .postTitle
+    {
+        font-size: 16px;
+    }
+
+    #postContent
+    {
+        font-size: 17px;
+    }
+
+    .comments button
+    {
+        font-size: 15px;
+    }
+
+    #form-comment-flex
+    {
+        font-size: 20px;
+    }
+
+    #form-comment-textarea
+    {
+        margin-top: 0;
+    }
+
+    #comments-container-flex h3
+    {
+        font-size: 20px;
+    }
+
+    .comment-author,
+    .comment-date,
+    .reported-form label
+    {
+        font-size: 17px;
+    }
+
+    .reported-form label
+    {
+        display: flex;
+        align-items: center;
+
+        padding: 10px 20px 10px 10px;
+    }
+
+    .comment-content
+    {
+        font-size: 20px;
+    }
+
+    #comments-container-flex .comment-btn-reported,
+    #comments-container-flex .btn-reported-submit
+    {
+        font-size: 14px;
+    }
+
+
+    /*<<<<<<<<<<<<<<<  Connexion view  <<<<<<<<<<<<<<<<*/
+    #form-connection input
+    {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+}
+
+
+@media all and (max-device-width: 750px)
+{
+    /*<<<<<<<<<<<<<    General      <<<<<<<<<<<<*/
+    #content
+    {
+        font-size: 35px;
+    }
+
+    .btn-bowlby
+    {
+        font-size: 25px;
+
+        padding: 10px;
+    }
+
+    /*<<<<<<<<<<<<   Home    <<<<<<<<<<<<<*/
+    header
+    {
+        height: 200px;
+    }
+
+    h1,
+    header #nav-container
+    {
+        font-size: 40px;
+
+        margin-top: 30px;
+    }
+
+    h1 a
+    {
+        font-size: 40px;
+    }
+
+    header #titleBook
+    {
+        font-size: 40px;
+
+        -webkit-order: 1;
+                order: 1;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #nav-public
+    {
+        top: 107px;
+    }
+
+    .nav-post-title a
+    {
+        font-size: 35px;
+    }
+
+    .btn-book
+    {
+        font-size: 60px;
+
+        margin: 0 30px 30px 30px;
+    }
+
+    #post-index-btn
+    {
+        padding-top: 1130px;
+    }
+
+    #comments-btn
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #btn-comment,
+    #btn-readComment
+    {
+        font-size: 30px;
+
+        width: 500px;
+        margin: 20px;
+        padding: 10px 0;
+    }
+
+    #form-comment-flex p
+    {
+        font-size: 30px;
+    }
+
+    #form-comment-flex input,
+    #form-comment-flex textarea
+    {
+        font-size: 25px;
+
+        width: 690px;
+        margin: 15px 0 15px 15px;
+    }
+
+    #btn-form-submit
+    {
+        font-size: 25px;
+
+        padding: 10px;
+    }
+
+    #comments-container-flex h3
+    {
+        font-size: 30px;
+    }
+
+    .comment-author,
+    .comment-date
+    {
+        font-size: 25px;
+    }
+
+    .comment-date
+    {
+        width: 70%;
+    }
+
+    .comment-author
+    {
+        width: 30%;
+    }
+
+    .comment-content
+    {
+        font-size: 30px;
+    }
+
+    .comment-btn-reported
+    {
+        font-size: 20px;
+
+        padding: 5px;
+    }
+
+    footer a
+    {
+        font-size: 20px;
+    }
+
+    /*-------   bookslider    ------*/
+    #book
+    {
+        background-image: none;
+    }
+
+    #book-box
+    {
+        box-shadow: 0 30px 150px rgba(0, 0, 0, 1);
+    }
+
+    #book,
+    #book-box,
+    #post-index-container
+    {
+        height: 1100px;
+    }
+
+    #postContent
+    {
+        font-size: 35px;
+
+        height: 1000px;
+    }
+
+    #postContent p
+    {
+        width: 750px;
+    }
+
+    .postTitle
+    {
+        font-size: 35px;
+    }
+
+    /*<<<<<<<<<  Connection View <<<<<<<<<<<<<*/
+    #form-connection input
+    {
+        width: 400px;
+        padding: 20px;
+    }
+
+    #form-connection button
+    {
+        width: 150px;
+        padding: 10px;
+    }
+
+    /*<<<<<<<<<<<  Index Admin   <<<<<<<<<<*/
+    #nav-admin li
+    {
+        font-size: 40px;
+    }
+
+    #admin-comments-reported h2,
+    #posts-listing h2
+    {
+        font-size: 37px;
+    }
+
+    .nb-reported,
+    .email-reported
+    {
+        font-size: 30px;
+
+        -webkit-order: 0;
+                order: 0;
+
+        width: 100%;
+        min-width: 34%;
+    }
+
+    .numChap
+    {
+        font-size: 35px;
+
+        -webkit-order: 1;
+                order: 1;
+
+        width: 100%;
+    }
+
+    #admin-comments-reported .comment-author,
+    #admin-comments-reported .comment-date
+    {
+        font-size: 30px;
+
+        -webkit-order: 2;
+                order: 2;
+    }
+
+    #admin-comments-reported .comment-content
+    {
+        font-size: 35px;
+
+        -webkit-order: 3;
+                order: 3;
+    }
+
+    #admin-comments-reported .btn-bowlby
+    {
+        flex-grow: 1;
+        text-align: center;
+
+        -webkit-order: 4;
+                order: 4;
+    }
+
+    .post-listing-title
+    {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    #posts-listing .btn-bowlby
+    {
+        font-size: 25px;
+
+        margin: 20px 0 30px 0;
+    }
+
+
+    /*<<<<<<<<<   Create view <<<<<<<<<<<<<*/
+    #create #post-title
+    {
+        margin-bottom: 40px;
+    }
+
+    /*<<<<<<<<<<<<<  Read view <<<<<<<<<<<*/
+    .admin-nb-reported,
+    .admin-email-reported
+    {
+        width: 100%;
+    }
+
+    .admin-btn-delete-comment {
+        flex-grow: 1;
+    }
+}
+
+
+@media all and (max-device-width: 480px)
+{
+    /*<<<<<<<<<<    Home    <<<<<<<<<*/
+    #comments-container-flex .comment-btn-reported,
+    #comments-container-flex .btn-reported-submit
+    {
+        font-size: 23px;
+
+        padding: 5px;
+    }
+
+    .admin-nb-reported,
+    .admin-email-reported
+    {
+        font-size: 25px;
+    }
+
+    input,
+    label,
+    textarea,
+    .reported-form label,
+    .reported-form-input,
+    #form-comment-flex label,
+    #form-comment-flex input,
+    #form-comment-flex textarea,
+    .notification,
+    .comment-content,
+    #form-connection input,
+    #create input,
+    #create textarea,
+    #update input,
+    #update textarea,
+    footer a
+    {
+        font-size: 35px;
+    }
+
+    #comments-container-flex h3,
+    #postContent
+    {
+        font-size: 37px;
+    }
+
+    footer
+    {
+        height: 100px;
+    }
+}
